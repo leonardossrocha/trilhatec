@@ -5,7 +5,7 @@
 * [Objetivo](#objetivo)
 * [Tecnologias Utilizadas](#tecnologias-utilizadas)  
 * [Funcionalidades Principais](#funcionalidades-principais)  
-* []()  
+* [Arquitetura do Sistema](#arquitetura)  
 * []()  
 
 ### Descrição
@@ -74,21 +74,12 @@ Implementação de notificações inteligentes que alertam alunos sobre atualiza
 Sistema automatizado de backup que garante que todas as anotações sejam preservadas e possam ser recuperadas em caso de problemas técnicos. Sincronização em tempo real entre diferentes dispositivos, permitindo que alunos acessem suas anotações de qualquer lugar. Exportação de anotações em diversos formatos (PDF, Word, texto simples) para uso offline ou impressão.
 
 
-## Arquitetura do Sistema
+### Arquitetura
 
-
-### Frontend
-Interface responsiva desenvolvida com HTML5 semântico, CSS3 moderno com variáveis customizáveis para temas, e JavaScript modular com padrões de desenvolvimento limpo.
-
-### Backend
-API RESTful desenvolvida em PHP com arquitetura MVC, implementando padrões de segurança como validação de entrada, sanitização de dados e prevenção contra ataques comuns (SQL Injection, XSS, CSRF). Sistema de roteamento limpo e middleware para autenticação e autorização.
-
-### Banco de Dados
-Esquema relacional otimizado com tabelas para usuários, anotações, sessões e configurações. Implementação de índices apropriados para performance em consultas complexas e backup automatizado com retenção configurável.
-
-### Integração Externa
-
-Comunicação segura com API da OpenAI através de endpoints protegidos. Sistema de fallback para casos de indisponibilidade da API externa. Este estágio foi simulado no projeto que conta com respostas da própria IA, no entanto, sem a integração direta, uma vez que há um custo para as consultas feitas na aplicação.
+* **Frontend** - Interface responsiva desenvolvida com HTML5 semântico, CSS3 moderno com variáveis customizáveis para temas, e JavaScript modular com padrões de desenvolvimento limpo.
+* **Backend** - API RESTful desenvolvida em PHP com arquitetura MVC, implementando padrões de segurança como validação de entrada, sanitização de dados e prevenção contra ataques comuns (SQL Injection, XSS, CSRF). Sistema de roteamento limpo e middleware para autenticação e autorização.
+* **Banco de Dados** - Esquema relacional otimizado com tabelas para usuários, anotações, sessões e configurações. Implementação de índices apropriados para performance em consultas complexas e backup automatizado com retenção configurável.
+* **Integração Externa** - Comunicação segura com API da OpenAI através de endpoints protegidos. Sistema de fallback para casos de indisponibilidade da API externa. Este estágio foi simulado no projeto que conta com respostas da própria IA, no entanto, sem a integração direta, uma vez que há um custo para as consultas feitas na aplicação.
 
 
 ### 📱 Responsividade e Acessibilidade
