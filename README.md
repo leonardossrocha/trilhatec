@@ -78,9 +78,6 @@ Implementação de notificações inteligentes que alertam alunos sobre atualiza
 
 Sistema automatizado de backup que garante que todas as anotações sejam preservadas e possam ser recuperadas em caso de problemas técnicos. Sincronização em tempo real entre diferentes dispositivos, permitindo que alunos acessem suas anotações de qualquer lugar. Exportação de anotações em diversos formatos (PDF, Word, texto simples) para uso offline ou impressão.
 
----
-
-## Casos de Uso Detalhados
 
 ### Para Estudantes de Enfermagem
 
@@ -94,13 +91,6 @@ Professores podem acompanhar o progresso de aprendizagem de cada aluno através 
 
 Gestores educacionais podem analisar dados agregados sobre efetividade do ensino, identificar disciplinas ou tópicos que apresentam maior dificuldade para os alunos, e otimizar curriculos baseados em dados reais de aprendizagem. O sistema também oferece métricas sobre engajamento dos alunos e efetividade dos recursos de IA implementados.
 
----
-
-## Segurança e Privacidade
-
-APRESENTAR FUNCIONALIDADES IMPORTANTES
-
----
 
 ## Arquitetura do Sistema
 
@@ -117,7 +107,6 @@ Esquema relacional otimizado com tabelas para usuários, anotações, sessões e
 
 Comunicação segura com API da OpenAI através de endpoints protegidos. Sistema de fallback para casos de indisponibilidade da API externa. Este estágio foi simulado no projeto que conta com respostas da própria IA, no entanto, sem a integração direta, uma vez que há um custo para as consultas feitas na aplicação.
 
----
 
 ### 📱 Responsividade e Acessibilidade
 
