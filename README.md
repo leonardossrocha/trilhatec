@@ -3,6 +3,10 @@
 ## Sumário
 * [Descrição](#descrição)
 * [Objetivo](#objetivo)
+* [Tecnologias Utilizadas](#tecnologias-utilizadas)  
+* [Funcionalidades Principais](#funcionalidades-principais)  
+* []()  
+* []()  
 
 ### Descrição
 
@@ -32,67 +36,46 @@ Criar uma solução digital para informatizar o processo de anotações acadêmi
 
 O sistema implementa um robusto mecanismo de login com três níveis de acesso distintos. A autenticação é realizada através de e-mail e senha, com validação tanto no frontend quanto no backend. As credenciais são verificadas contra o banco de dados MySQL, onde as senhas são armazenadas com hash seguro. O sistema mantém sessões ativas através de tokens seguros e oferece funcionalidade de logout que limpa todas as informações de sessão.
 
-VÍDEO PARA DEMONSTRAÇÃO
-
-**Credenciais de Acesso:**
+**Perfis de Acesso:**
 
 - Aluno
 - Instrutor
 - Administrador
 
-### Caderneta Digital Inteligente
+#### Caderneta Digital Inteligente
 
 A funcionalidade principal permite aos alunos criar, editar e organizar anotações de forma intuitiva. Cada anotação possui título, conteúdo detalhado, data de criação e modificação, além de categorias personalizáveis. O sistema oferece busca avançada por palavras-chave e organização cronológica automática. As anotações são sincronizadas em tempo real com o banco de dados, garantindo que não haja perda de informações.
 
-VÍDEO PARA DEMONSTRAÇÃO
 
-### Integração Avançada com Inteligência Artificial
+#### Integração Avançada com Inteligência Artificial
 
 O MedNotes integra-se com a API da OpenAI para oferecer análise automática e enriquecimento de conteúdo. Quando um aluno cria uma anotação, a IA analisa o contexto médico e de enfermagem, fornecendo sugestões complementares, esclarecimentos técnicos, referências bibliográficas relevantes e insights didáticos. O sistema também identifica possíveis inconsistências ou informações que necessitam de verificação adicional, alertando tanto alunos quanto professores.
 
-VÍDEO PARA DEMONSTRAÇÃO
 
-### Painel do Professor
+#### Painel do Professor
 
 Professores têm acesso a um dashboard completo onde podem visualizar todas as anotações de seus alunos, incluindo as sugestões geradas pela IA. O sistema oferece ferramentas de análise que permite fornecer feedback personalizado. Os professores podem também criar anotações compartilhadas e material de referência que ficam disponíveis para todos os alunos da turma.
 
-VIDEO PARA DEMONSTRAÇÃO
 
-### Sistema Administrativo
+#### Sistema Administrativo
 
 Administradores possuem controle total sobre o sistema, incluindo gerenciamento completo de usuários com capacidade de criar, editar e excluir contas, estatísticas de uso e engajamento, configuração de parâmetros da IA e suas integrações, backup e recuperação de dados, e monitoramento de performance do sistema.
 
-VIDEO PARA DEMONSTRAÇÃO
-
-### Interface Adaptável com Modo Claro/Escuro
+#### Interface Adaptável com Modo Claro/Escuro
 
 O sistema implementa alternância completa entre modo claro e escuro, mantendo consistência visual e usabilidade em ambos os temas. A preferência do usuário é salva automaticamente no localStorage, garantindo que a escolha seja lembrada em sessões futuras. O modo escuro foi especialmente otimizado para reduzir fadiga ocular durante uso prolongado, melhorando a acessibilidade para usuários com sensibilidade à luz ou necessidades específicas de visualização.
 
-VIDEO PARA DEMONSTRAÇÃO
-
-### Sistema de Notificações e Lembretes
+#### Sistema de Notificações e Lembretes
 
 Implementação de notificações inteligentes que alertam alunos sobre atualizações importantes, sugestões da IA que requerem atenção, feedbacks de professores e lembretes para revisão de conteúdo.
 
-### Backup e Sincronização
+#### Backup e Sincronização
 
 Sistema automatizado de backup que garante que todas as anotações sejam preservadas e possam ser recuperadas em caso de problemas técnicos. Sincronização em tempo real entre diferentes dispositivos, permitindo que alunos acessem suas anotações de qualquer lugar. Exportação de anotações em diversos formatos (PDF, Word, texto simples) para uso offline ou impressão.
 
 
-### Para Estudantes de Enfermagem
-
-Durante as aulas teóricas, os alunos podem registrar rapidamente conceitos importantes, procedimentos clínicos e observações do professor. A IA automaticamente enriquece essas anotações com informações complementares sobre anatomia, farmacologia ou protocolos de cuidado. Durante estágios práticos, os alunos acessam suas anotações organizadas por tema, com sugestões da IA sobre melhores práticas e cuidados específicos para cada situação clínica encontrada.
-
-### Para Professores e Orientadores
-
-Professores podem acompanhar o progresso de aprendizagem de cada aluno através das anotações registradas, identificando lacunas de conhecimento ou conceitos mal compreendidos. O sistema permite fornecer feedback direcionado e personalizado, além de criar material de apoio baseado nas dúvidas mais comuns identificadas nas anotações dos alunos.
-
-### Para Administradores Acadêmicos
-
-Gestores educacionais podem analisar dados agregados sobre efetividade do ensino, identificar disciplinas ou tópicos que apresentam maior dificuldade para os alunos, e otimizar curriculos baseados em dados reais de aprendizagem. O sistema também oferece métricas sobre engajamento dos alunos e efetividade dos recursos de IA implementados.
-
-
 ## Arquitetura do Sistema
+
 
 ### Frontend
 Interface responsiva desenvolvida com HTML5 semântico, CSS3 moderno com variáveis customizáveis para temas, e JavaScript modular com padrões de desenvolvimento limpo.
@@ -110,7 +93,7 @@ Comunicação segura com API da OpenAI através de endpoints protegidos. Sistema
 
 ### 📱 Responsividade e Acessibilidade
 
-O TrilhaTec foi desenvolvido seguindo princípios de design responsivo, garantindo experiência otimizada em dispositivos móveis, tablets e desktops. A interface adapta-se automaticamente a diferentes tamanhos de tela, mantendo usabilidade e funcionalidade completas. Além disso conta com recurso de modo escuro, uma vez que este pode ser considerado um recurso de acessibilidade. 
+O TrilhaTec foi desenvolvido seguindo princípios de design responsivo, garantindo experiência otimizada em dispositivos móveis, tablets e desktops. A interface adapta-se automaticamente a diferentes tamanhos de tela, mantendo usabilidade e funcionalidade completas. Além disso conta com recurso de [modo escuro](#interface-adaptável-com-modo-claroescuro), uma vez que este pode ser considerado um recurso de acessibilidade. 
 
 
 ## Roadmap e Futuras Implementações
