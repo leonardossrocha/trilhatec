@@ -115,17 +115,11 @@ O TrilhaTec foi desenvolvido seguindo princípios de design responsivo, garantin
 
 ## Roadmap e Futuras Implementações
 
-### Fase 1 - Melhorias Visuais e UX
-Redesign completo da interface com foco em experiência do usuário, implementação de animações e micro-interações, otimização para dispositivos móveis, e personalização avançada de temas e layouts.
+* **Fase 1 - Melhorias Visuais e UX** - Redesign completo da interface com foco em experiência do usuário, implementação de animações e micro-interações, otimização para dispositivos móveis, e personalização avançada de temas e layouts.
+* **Fase 2 - Integrações Avançadas** - Integração com sistemas acadêmicos existentes, API para aplicativos móveis nativos, conectividade com dispositivos wearables para coleta de dados em tempo real durante estágios, e integração com bibliotecas médicas digitais.
+* **Fase 3 - Inteligência Artificial Avançada** - Implementação de modelos de IA especializados em conteúdo médico, sistema de recomendação personalizado baseado em padrões de aprendizagem, análise preditiva para identificação precoce de dificuldades de aprendizagem, e geração automática de questionários e exercícios baseados nas anotações.
+* **Fase 4 - Recursos Colaborativos Expandidos** - Salas virtuais para estudo em grupo, sistema de mentoria peer-to-peer, gamificação com conquistas e progressão, e marketplace de conteúdo onde professores podem compartilhar material premium.
 
-### Fase 2 - Integrações Avançadas
-Integração com sistemas acadêmicos existentes, API para aplicativos móveis nativos, conectividade com dispositivos wearables para coleta de dados em tempo real durante estágios, e integração com bibliotecas médicas digitais.
-
-### Fase 3 - Inteligência Artificial Avançada
-Implementação de modelos de IA especializados em conteúdo médico, sistema de recomendação personalizado baseado em padrões de aprendizagem, análise preditiva para identificação precoce de dificuldades de aprendizagem, e geração automática de questionários e exercícios baseados nas anotações.
-
-### Fase 4 - Recursos Colaborativos Expandidos
-Salas virtuais para estudo em grupo, sistema de mentoria peer-to-peer, gamificação com conquistas e progressão, e marketplace de conteúdo onde professores podem compartilhar material premium.
 
 ### Responsáveis pelo desenvolvimento do projeto
 
