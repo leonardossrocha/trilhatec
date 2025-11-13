@@ -389,7 +389,7 @@ function carregarFeedbacks(atividadeId) {
                     item.className = 'feedback-item border-b border-gray-200 pb-2 mb-2';
                     item.innerHTML = `
                         <div class="feedback-header flex justify-between text-xs text-gray-600 mb-1" style="color: var(--text-color);">
-                            <span><strong>Instrutor</strong> ${fb.professor_nome}</span>
+                            <span><strong>Instrutor.</strong> ${fb.professor_nome}</span>
                             <span>${new Date(fb.data_feedback).toLocaleString('pt-BR')}</span>
                         </div>
                         <p class="text-sm text-gray-700" style="color: var(--text-color);">${fb.comentario.replace(/\n/g, '<br>')}</p>
@@ -559,6 +559,8 @@ function loadScript(url) {
 
 // Respostas pré-definidas por tópico
 const TOPIC_RESPONSES = {
+
+//Bloco 1
     "Sinais Vitais - Conceitos Gerais": `
 Sinais Vitais Básicos
 
@@ -570,7 +572,18 @@ Os sinais vitais incluem:
 • Dor (considerado o 5º sinal vital)
 • Saturação de oxigênio (em alguns protocolos)
 
-Valores normais de referência podem variar conforme idade e condições específicas.`,
+Valores normais de referência podem variar conforme idade e condições específicas.
+    
+    
+    ==== SUGESTÃO HUMANIZADA ====
+    
+  O que são sinais vitais?
+Os sinais vitais são como pistas que o nosso corpo nos dá para mostrar como ele está funcionando.
+Quando medimos a temperatura, o pulso, a respiração, a pressão e perguntamos sobre dor, estamos verificando se tudo está bem ou se precisamos cuidar de alguma alteração.
+É como olhar os ‘alertas’ do nosso corpo: se algo muda, a gente consegue agir antes que piore.`,
+
+//Bloco 2
+
     "Temperatura Corporal": `
 Temperatura Corporal Normal
 
@@ -580,7 +593,20 @@ Valores de referência:
 • Retal: 36°C - 37,5°C
 • Timpânica: 35,8°C - 37°C
 
-Febre: acima de 37,8°C (axilar) ou 38°C (retal)`,
+Febre: acima de 37,8°C (axilar) ou 38°C (retal)
+    
+    
+    ==== SUGESTÃO HUMANIZADA ====
+
+    A temperatura do corpo mostra se ele está equilibrado. Em adultos, o normal fica por volta de 36 a 37 °C, mas pode variar conforme a idade e saúde.
+Quando a temperatura sobe demais ou cai, pode ser sinal de que o corpo está reagindo a algo — como uma infecção ou até o frio extremo. Por isso é importante medir direitinho.”
+Forma simples de explicar febre:
+
+    • Temperatura normal: até cerca de 37,5 °C.
+    • Acima disso é febre, o corpo está lutando contra algo.
+    • Se passar de 39 °C, chamamos de febre alta — merece atenção e cuidados.`,
+
+
     "Pulso e Frequência Cardíaca": `
 Pulso e Frequência Cardíaca
 
@@ -592,7 +618,23 @@ Valores normais por faixa etária:
 • Adulto: 60-100 bpm
 • Idoso: 60-100 bpm (pode ser mais baixo em atletas)
 
-Locais de aferição: radial, carotídeo, braquial, femoral, poplíteo, pedioso dorsal.`,
+Locais de aferição: radial, carotídeo, braquial, femoral, poplíteo, pedioso dorsal.
+
+    ==== SUGESTÃO HUMANIZADA ====
+
+    O pulso mostra quantas vezes o coração bate por minuto.
+O coração é como uma bomba que envia sangue para o corpo todo. Quando medimos o pulso, vemos:
+
+    • Quantas batidas tem por minuto
+    • Se está forte ou fraco
+    • Se está regular ou irregular
+
+    Adultos normalmente têm entre 60 e 100 batimentos por minuto.
+
+Exemplo de frase ao paciente:
+Vou segurar seu pulso para sentir como seu coração está batendo, tudo bem? É rápido, indolor e ajuda a ver se o coração está trabalhando direitinho.`,
+
+
     "Frequência Respiratória": `
 Frequência Respiratória
 
@@ -604,7 +646,18 @@ Valores normais por faixa etária:
 • Adulto: 12-20 rpm
 • Idoso: 12-20 rpm
 
-Avaliar também ritmo, profundidade e esforço respiratório.`,
+Avaliar também ritmo, profundidade e esforço respiratório.
+
+    ==== SUGESTÃO HUMANIZADA ====
+
+    A respiração mostra quantas vezes você respira por minuto e como está respirando.
+Em adultos, o normal é entre 12 e 20 respirações por minuto.
+Observo se o peito sobe e desce, se o ar entra com facilidade e se a pessoa está cansada para respirar.
+
+Explicação acolhedora:
+
+Vou observar sua respiração sem que você precise fazer nada, ok? Só para ver se está confortável e respirando bem.`,
+
     "Pressão Arterial": `
 Pressão Arterial
 
@@ -614,7 +667,25 @@ Classificação para adultos (mmHg):
 • Hipertensão Estágio 1: 140-159/90-99
 • Hipertensão Estágio 2: ≥160/≥100
 
-Em crianças, utilize tabelas específicas por idade, sexo e percentil de altura.`,
+Em crianças, utilize tabelas específicas por idade, sexo e percentil de altura.
+
+    ==== SUGESTÃO HUMANIZADA ====
+
+    A pressão mostra a força com que o sangue passa pelas veias.
+
+Ela tem dois números:
+    • O de cima: força quando o coração bate
+    • O de baixo: força quando o coração relaxa
+
+    A gente mede para ver se o coração e os vasos estão trabalhando de forma segura.
+
+    Explicação humanizada:
+Colocarei essa faixa no seu braço, pode apertar um pouquinho, mas passa rápido.
+
+Atualização importante:
+Hoje sabemos que valores acima de 140 x 90 no consultório indicam pressão alta.
+Mas se você medir em casa, acima de 130 x 80 já merece atenção.`,
+
     "Dor como Sinal Vital": `
 Avaliação da Dor
 
@@ -624,7 +695,17 @@ Escalas mais utilizadas:
 • Escala de Faces Wong-Baker (para crianças)
 • FLACC (para bebês e não verbais)
 
-Avaliar localização, características, intensidade, duração e fatores agravantes/aliviadores.`,
+Avaliar localização, características, intensidade, duração e fatores agravantes/aliviadores.
+
+==== SUGESTÃO HUMANIZADA ====
+
+A dor também é um sinal vital, porque ela mostra que algo no corpo precisa de cuidado.
+Cada pessoa sente dor de um jeito, então você me ajuda me contando como está sentindo.
+
+Se 0 for sem dor nenhuma, e 10 for a pior dor que você consegue imaginar…
+Que número você daria para sua dor agora?`,
+
+
     "Administração de Medicamentos - Vias Oral e Sublingual": `
 Vias Oral e Sublingual
 
@@ -636,7 +717,24 @@ Via Oral:
 Via Sublingual:
 • Colocar medicamento sob a língua
 • Não engolir até completa absorção
-• Exemplo: Nitroglicerina`,
+• Exemplo: Nitroglicerina
+
+    ==== SUGESTÃO HUMANIZADA ====
+
+    Quando administramos um medicamento, nosso objetivo é garantir que ele faça efeito com segurança e no tempo certo.
+Cada medicação tem um jeito correto de ser dada, e nós, profissionais, cuidamos para que isso aconteça com conforto, cuidado e segurança para o paciente.
+
+    Via oral (pela boca):
+Vou te oferecer seu medicamento e você vai tomar pela boca, tudo bem?
+É só tomar com água. Vou te ajudar e ficar por perto.”
+
+Via sublingual:
+Explicando ao paciente
+Esse aqui vai por baixo da língua. Ele dissolve sozinho — não precisa mastigar ou engolir. Assim ele age mais rápido, combinado?
+Se engolir ou mastigar, o remédio pode não fazer o efeito esperado, tudo bem? 
+`,
+
+
     "Administração Parenteral - IM, ID, SC": `
 Vias Parenterais
 
@@ -654,7 +752,30 @@ Intradérmica (ID):
 • Local: Face anterior do antebraço
 • Agulha: 26-27G, 3/8" a 1/2"
 • Ângulo: 10-15 graus
-• Volume máximo: 0,1 mL`,
+• Volume máximo: 0,1 mL
+
+    ==== SUGESTÃO HUMANIZADA ====
+
+    Via oral (pela boca):
+    
+    Vou te oferecer seu medicamento e você vai tomar pela boca, tudo bem?
+É só tomar com água. Vou te ajudar e ficar por perto.
+
+    Via sublingual:
+    
+    Explicando ao paciente
+Esse aqui vai por baixo da língua. Ele dissolve sozinho — não precisa mastigar ou engolir. Assim ele age mais rápido, combinado?
+Se engolir ou mastigar, o remédio pode não fazer o efeito esperado, tudo bem? 
+
+    Administração Parenteral (IM, SC, ID)
+
+    Vou aplicar o medicamento com agulha, tudo bem?
+    Vou escolher o melhor local e fazer de forma rápida e segura.
+    Se sentir qualquer desconforto, me avise.
+
+`,
+
+
     "Administração Endovenosa e Inalatória": `
 Vias Endovenosa e Inalatória
 
@@ -667,24 +788,48 @@ Endovenosa (EV):
 Inalatória:
 • Uso de nebulizadores ou inaladores dosimetrados
 • Orientar técnica adequada de inalação
-• Enxaguar boca após corticosteroides inalatórios`
+• Enxaguar boca após corticosteroides inalatórios
+
+    ==== SUGESTÃO HUMANIZADA ====
+
+    Endovenosa (EV):
+
+    Esse medicamento vai direto na veia para agir mais rápido. Vou acompanhar para garantir conforto e segurança.
+
+    Bombas de Infusão:
+
+    As bombas de infusão controlam gota por gota, para garantir a dose certa no tempo certo. Trazem mais segurança ao paciente.
+
+    Administração inalatória:
+
+    Esse remédio vai direto para o pulmão, você respira fundo e ele age mais rápido nas vias respiratórias.
+
+`
+
 };
 
 // Respostas para perguntas customizadas
 const FLORENCE_ANSWERS = {
-    "Quais são os cuidados necessários ao administrar medicamentos por via oral?": `1. Verificar a prescrição médica
-2. Garantir que o paciente esteja consciente
-3. Confirmar capacidade de deglutição
-4. Evitar alimentos que interfiram na absorção
-5. Observar horários específicos (jejum/com alimentos)`,
-    "Quais os cuidados ao administrar medicamentos via sublingual?": `• Orientar a não engolir o comprimido
-• Manter sob a língua até dissolver
-• Evitar água/alimentos durante absorção
-• Garantir boca limpa
-• Exemplos: Nitroglicerina, Buprenorfina`,
-    "Quais são os principais locais de aplicação e angulação para as vias IM, ID e SC?": `IM (Intramuscular):
-- Locais: Nádegas (glúteo), deltoide, vasto lateral
-- Angulação: 90°
+"Quais são os cuidados necessários ao administrar medicamentos por via oral?": 
+    `1. Verificar a prescrição médica
+    2. Garantir que o paciente esteja consciente
+    3. Confirmar capacidade de deglutição
+    4. Evitar alimentos que interfiram na absorção
+    5. Observar horários específicos (jejum/com alimentos)`,
+
+"Quais os cuidados ao administrar medicamentos via sublingual?": 
+
+`• Orientar a não engolir o comprimido
+    • Manter sob a língua até dissolver
+    • Evitar água/alimentos durante absorção
+    • Garantir boca limpa
+    • Exemplos: Nitroglicerina, Buprenorfina`,
+    
+"Quais são os principais locais de aplicação e angulação para as vias IM, ID e SC?": 
+
+`IM (Intramuscular):
+    - Locais: Nádegas (glúteo), deltoide, vasto lateral
+    - Angulação: 90°
 
 SC (Subcutânea):
 - Locais: Abdômen, coxa, braço
@@ -693,18 +838,25 @@ SC (Subcutânea):
 ID (Intradérmica):
 - Locais: Antebraço
 - Angulação: 10-15°`,
-    "Quais são os riscos de se administrar um medicamento em local incorreto?": `• Dor intensa
+    
+"Quais são os riscos de se administrar um medicamento em local incorreto?": 
+`• Dor intensa
 • Lesão tecidual/nervosa
 • Abscesso ou necrose
 • Ineficácia do tratamento
 • Reações adversas`,
-    "Quais cuidados são necessários durante a administração por via EV para evitar flebite?": `• Técnica asséptica rigorosa
+    
+"Quais cuidados são necessários durante a administração por via EV para evitar flebite?": 
+`• Técnica asséptica rigorosa
 • Escolha adequada da veia
 • Fixação correta do acesso
 • Velocidade de infusão adequada
 • Observação constante do local
 • Rodízio de punções`,
-    "Quais são os tipos de administração endovenosa e em que situações são indicadas?": `Bolus (rápida):
+    
+"Quais são os tipos de administração endovenosa e em que situações são indicadas?": 
+
+`Bolus (rápida):
 - Emergências
 - Ação imediata necessária
 
@@ -715,7 +867,11 @@ Infusão intermitente:
 Infusão contínua:
 - Soro terapia
 - Medicamentos de meia-vida curta`,
-    "Descreva o passo a passo da técnica correta para a via intramuscular.": `1. Higienizar as mãos
+    
+
+"Descreva o passo a passo da técnica correta para a via intramuscular.": 
+
+`1. Higienizar as mãos
 2. Preparar material
 3. Identificar paciente
 4. Selecionar local
@@ -726,7 +882,10 @@ Infusão contínua:
 9. Retirar agulha
 10. Comprimir local
 11. Descartar material`,
-    "Por que alguns medicamentos devem ser tomados em jejum ou com alimentos?": `Jejum:
+    
+
+"Por que alguns medicamentos devem ser tomados em jejum ou com alimentos?": 
+`Jejum:
 - Melhor absorção (ex: levotiroxina, alendronato)
 - Evitar interações
 
@@ -735,7 +894,11 @@ Com alimentos:
 - Melhorar absorção lipossolúvel
 - Evitar náuseas
 - Atraso absorção desejado`,
-    "Quais medicamentos são comumente utilizados na via inalatória?": `Broncodilatadores:
+    
+
+"Quais medicamentos são comumente utilizados na via inalatória?": 
+
+`Broncodilatadores:
 - Salbutamol
 - Ipratrópio
 
@@ -748,7 +911,11 @@ Combinações:
 
 Antibióticos:
 - Tobramicina (fibrose cística)`,
-    "Quais os dispositivos utilizados na administração de medicamentos inalatórios?": `Inaladores dosimetrados (bombinhas)
+    
+
+"Quais os dispositivos utilizados na administração de medicamentos inalatórios?": 
+
+`Inaladores dosimetrados (bombinhas)
 Inaladores de pó seco
 Nebulizadores
 Espaçadores
