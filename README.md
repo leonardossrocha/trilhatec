@@ -1,16 +1,19 @@
-# MedNotes
+# Projeto - TrilhaTec
 
-O **MedNotes** é uma caderneta digital desenvolvida em parceria com o **SENAC**, voltada especialmente aos estudantes do curso de Enfermagem. Seu principal objetivo é oferecer uma plataforma intuitiva para que os alunos registrem anotações durante as aulas e possam acessá-las durante os estágios, com o apoio de Inteligência Artificial (IA) para enriquecer o conteúdo e facilitar o aprendizado. Os professores, por sua vez, têm acesso às anotações dos alunos, incluindo aquelas enriquecidas com informações da IA. Isso permite um acompanhamento eficiente e uma análise criteriosa da qualidade do conteúdo, contribuindo para a formação de profissionais de saúde mais bem preparados.
+## Sumário
+* [Descrição](#descrição)
+* [Objetivo](#objetivo)
 
----
+### Descrição
 
-## Objetivo
+O **TrilhaTec** é uma caderneta digital desenvolvida em parceria com o **SENAC Paraná**, voltada especialmente aos estudantes do curso de Enfermagem. Seu principal objetivo é oferecer uma plataforma intuitiva para que os alunos registrem anotações durante as aulas e possam acessá-las durante os estágios. Conta com de Inteligência Artificial (IA) (simulação) para enriquecer o conteúdo e facilitar o aprendizado. Os instrutores, por sua vez, têm acesso às anotações dos alunos, incluindo aquelas enriquecidas com informações da IA. Isso permite um acompanhamento eficiente e uma análise criteriosa da qualidade do conteúdo, contribuindo para a formação de profissionais de saúde mais bem preparados.
 
-A principal proposta foi criar uma solução digital que centralize o processo de anotações acadêmicas, transformando práticas tradicionais de registros em papel ou arquivos desorganizados em uma aplicação funcional, fácil de usar e que integre recursos de inteligência artificial. O projeto visa facilitar o registro e a organização de anotações pelos alunos, integrar recursos de IA para fornecer sugestões e informações adicionais relevantes, permitir que os professores acompanhem as anotações dos alunos garantindo a qualidade e veracidade das informações, e oferecer uma interface amigável e responsiva, acessível em diversos dispositivos.
+### Objetivo
 
----
+Criar uma solução digital para informatizar o processo de anotações acadêmicas, transportando as práticas tradicionais de registros em papel ou arquivos para uma aplicação funcional, fácil de usar e que integre recursos de inteligência artificial. 
 
-## Tecnologias Utilizadas
+
+### Tecnologias Utilizadas
 
 - **HTML5**: Estruturação semântica das páginas e formulários da aplicação
 - **CSS3**: Estilização avançada com suporte a modo claro/escuro, responsividade e animações
@@ -20,26 +23,22 @@ A principal proposta foi criar uma solução digital que centralize o processo d
 - **OpenAI API**: Integração com GPT-3.5/GPT-4 para análise e enriquecimento de conteúdo
 - **LocalStorage**: Armazenamento local no navegador para preferências do usuário e cache temporário
 - **GitHub**: Controle de versão e colaboração em equipe
-- **VS Code**: Ambiente de desenvolvimento integrado
+- **VSCode**: Ambiente de desenvolvimento integrado
 
----
 
-## Estrutura das Pastas
+### Funcionalidades Principais
 
----
-
-## Funcionalidades Principais
-
-### Sistema de Autenticação e Autorização
+#### Sistema de Autenticação e Autorização
 
 O sistema implementa um robusto mecanismo de login com três níveis de acesso distintos. A autenticação é realizada através de e-mail e senha, com validação tanto no frontend quanto no backend. As credenciais são verificadas contra o banco de dados MySQL, onde as senhas são armazenadas com hash seguro. O sistema mantém sessões ativas através de tokens seguros e oferece funcionalidade de logout que limpa todas as informações de sessão.
 
 VÍDEO PARA DEMONSTRAÇÃO
 
 **Credenciais de Acesso:**
-- **Aluno**: aluno@exemplo.com / senha123
-- **Professor**: professor@exemplo.com / senha123
-- **Administrador**: admin@exemplo.com / admin123
+
+- Aluno
+- Instrutor
+- Administrador
 
 ### Caderneta Digital Inteligente
 
@@ -115,21 +114,15 @@ API RESTful desenvolvida em PHP com arquitetura MVC, implementando padrões de s
 Esquema relacional otimizado com tabelas para usuários, anotações, sessões e configurações. Implementação de índices apropriados para performance em consultas complexas e backup automatizado com retenção configurável.
 
 ### Integração Externa
-Comunicação segura com API da OpenAI através de endpoints protegidos. Sistema de fallback para casos de indisponibilidade da API externa.
+
+Comunicação segura com API da OpenAI através de endpoints protegidos. Sistema de fallback para casos de indisponibilidade da API externa. Este estágio foi simulado no projeto que conta com respostas da própria IA, no entanto, sem a integração direta, uma vez que há um custo para as consultas feitas na aplicação.
 
 ---
 
-## 📱 Responsividade e Acessibilidade
+### 📱 Responsividade e Acessibilidade
 
-O MedNotes foi desenvolvido seguindo princípios de design responsivo, garantindo experiência otimizada em dispositivos móveis, tablets e desktops. A interface adapta-se automaticamente a diferentes tamanhos de tela, mantendo usabilidade e funcionalidade completas.
+O TrilhaTec foi desenvolvido seguindo princípios de design responsivo, garantindo experiência otimizada em dispositivos móveis, tablets e desktops. A interface adapta-se automaticamente a diferentes tamanhos de tela, mantendo usabilidade e funcionalidade completas. Além disso conta com recurso de modo escuro, uma vez que este pode ser considerado um recurso de acessibilidade. 
 
----
-
-## Processo de Desenvolvimento e Versionamento
-
-Utilização do Git para controle de versão com estratégia de branching organizada, incluindo branches principais para produção e desenvolvimento, feature branches para novas funcionalidades, e processo de code review antes de merges. Implementação de testes automatizados para garantir qualidade e estabilidade do código. Deploy automatizado com ambientes separados para desenvolvimento, teste e produção.
-
----
 
 ## Roadmap e Futuras Implementações
 
@@ -145,56 +138,13 @@ Implementação de modelos de IA especializados em conteúdo médico, sistema de
 ### Fase 4 - Recursos Colaborativos Expandidos
 Salas virtuais para estudo em grupo, sistema de mentoria peer-to-peer, gamificação com conquistas e progressão, e marketplace de conteúdo onde professores podem compartilhar material premium.
 
----
+### Responsáveis pelo desenvolvimento do projeto
 
-##  Considerações Importantes
+* Orientador - [Leonardo Rocha](https://github.com/leonardossrocha)  
 
-Este projeto representa atualmente um **protótipo de baixa fidelidade** em sua fase inicial. O foco principal está em demonstrar a proposta funcional da aplicação, priorizando estrutura sólida e fluxo de navegação intuitivo. Todos os dados utilizados são estritamente fictícios e simulados, não se baseando em informações reais ou sensíveis. Não há conteúdo restrito, confidencial ou ofensivo que possa comprometer privacidade, integridade ou reputação de indivíduos ou organizações.
-
-O sistema atual utiliza armazenamento local (localStorage) para algumas funcionalidades, o que significa que certos dados podem ser perdidos ao limpar o cache do navegador. Em versões futuras, toda persistência será migrada para o banco de dados MySQL para garantir durabilidade e sincronização completa entre dispositivos.
-
----
-
-## Como Executar o Projeto
-
-### Pré-requisitos
-- Servidor web com suporte a PHP 8.0 ou superior (Apache/Nginx)
-- MySQL 8.0 ou superior
-- Navegador web moderno com suporte a JavaScript ES6+
-- Conta ativa na OpenAI com API key válida
-- Git para controle de versão
-
-### Configuração do Ambiente
-1. Clone o repositório do projeto em seu servidor local ou de produção
-2. Configure o banco de dados MySQL criando um novo schema e importando o arquivo de estrutura fornecido
-3. Configure as credenciais de banco de dados no arquivo de configuração PHP
-4. Obtenha uma API key da OpenAI e configure-a no sistema
-5. Configure as permissões adequadas para as pastas de upload e cache
-6. Acesse a aplicação através do navegador e realize o primeiro login com as credenciais padrão
-
-### Configuração de Produção
-Para ambiente de produção, certifique-se de alterar todas as credenciais padrão, configurar HTTPS com certificado SSL válido, implementar backup automatizado do banco de dados, configurar monitoramento de logs e performance, e estabelecer rotinas de manutenção e atualizações de segurança.
-
----
-
-## Contribuições e Suporte
-
-APRESENTAR DADOS
-
----
-
-## Licença e Autoria
-
-Este projeto foi desenvolvido em parceria com o **SENAC** como parte de um programa de inovação educacional na área de saúde. O desenvolvimento técnico foi realizado seguindo melhores práticas de engenharia de software e design centrado no usuário. O projeto está licenciado sob licença MIT, permitindo uso, modificação e distribuição livre, desde que mantidas as atribuições originais de autoria.
-
-A parceria com o SENAC garante que o projeto atenda às necessidades reais dos estudantes de enfermagem e esteja alinhado com as melhores práticas pedagógicas da área de saúde. O feedback contínuo de professores e alunos é fundamental para o aprimoramento constante da plataforma.
-
----
-
-## Impacto Educacional Esperado
-
-O MedNotes representa uma evolução significativa na forma como estudantes de enfermagem organizam e acessam informações durante sua formação. A integração de inteligência artificial não substitui o conhecimento e experiência dos professores, mas sim complementa o processo de aprendizagem, oferecendo recursos adicionais que enriquecem a experiência educacional.
-
-A plataforma promove maior engajamento dos alunos com o conteúdo, facilita a identificação precoce de dificuldades de aprendizagem, melhora a qualidade das anotações através de sugestões inteligentes, e cria um ambiente colaborativo que fortalece a comunidade acadêmica. Professores se beneficiam de insights valiosos sobre o progresso de seus alunos, permitindo intervenções pedagógicas mais precisas e efetivas.
-
-Este projeto pioneiro na integração de IA na educação em enfermagem estabelece precedentes para futuras inovações educacionais, demonstrando como a tecnologia pode ser aplicada de forma ética e eficaz para melhorar resultados de aprendizagem na área de saúde.
+* Alunos:  
+[Heitor Dalla](https://github.com/HeitorDalla)
+[Gilherme Tofoli](https://github.com/guilhermetofoli)
+[Matheus Coronado](https://github.com/matheuscoronado)  
+[Abner Castanho](https://github.com/abnercastanho)  
+[Gabriel Coronado](https://github.com/BackupTrabalho1212)  
